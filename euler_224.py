@@ -7,6 +7,7 @@ def branch_1 (x,y,z,N):
         count += branch_1(a,b,c,N)
         count += branch_2(a,b,c,N)
         count += branch_3(a,b,c,N)
+        #have to ensure we are only counting items where a>b
         if (a<=b):
             count +=1
     return count
@@ -36,6 +37,7 @@ def branch_3 (x,y,z,N):
         if (a<=b):
             count += 1
     return count
+
 
 for t in range(int(input())):
     N = int(input())
