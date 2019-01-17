@@ -39,6 +39,6 @@ def branch_3 (x,y,z,N):
     return count
 
 
-prompt = "Give me a value for the max perimeter and I will give you the number of triangles that have a perimeter less than your input and meet the equation: a**2+b**2=c**2+1: "
+prompt = "Give me a value for the max perimeter and I will give you the number of triangles that have a perimeter less than your input and meet the equation: a**2+b**2=c**2-1: "
 N = int(input(prompt))
 print (1+branch_1(2,2,3,N) + branch_2(2,2,3,N) + branch_3(2,2,3,N))
