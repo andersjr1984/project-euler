@@ -23,6 +23,7 @@ def branch_2(x,y,z,N):
         #print (str(a) + ' ' + str(b) + ' ' + str(c) + ' 2')
         count += branch_1(a,b,c,N)
         count += branch_2(a,b,c,N)
+        #when a == b, branch_3 breaks down and starts to rapidly decrease till b=1 and that causes problems.  Branch 2 is the only branch a==b.
         if (a != b):
             count += branch_3(a,b,c,N)
         count += 1
