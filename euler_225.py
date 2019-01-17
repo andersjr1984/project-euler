@@ -1,6 +1,9 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-T_list = list(map(int,input().split()))
+prompt = "This program will give you the Nth odd divisor of a sum of a list of numbers.  Please enter the first three numbers in the list, separated by a space, then enter N, which is the number of non-divisors you are looking for: "
+
+
+T_list = list(map(int,input(prompt).split()))
 k = T_list.pop()
 orig = T_list
 
